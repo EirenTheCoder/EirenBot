@@ -7,29 +7,33 @@ class  PERSONA{
     }
 }
 
-/*function usersListed(){
-    var usersListed = PERSONA[2];
-    usersListed[0].name = "Eiren";
-    usersListed[0].password = "1234";
-    usersListed[1].name = "Guest";
-    usersListed[1].password = "0000";
-    usersListed[2].name = "Admin";
-    usersListed[2].password = "admin";
-}*/
-//usersListed();
+// function usersListed(){
+//     var usersListed = PERSONA[2];
+//     usersListed[0].name = "Eiren";
+//     usersListed[0].password = "1234";
+//     usersListed[1].name = "Guest";
+//     usersListed[1].password = "0000";
+//     usersListed[2].name = "Admin";
+//     usersListed[2].password = "admin";
+    
+// }
+// usersListed();
 
 function login(){
 
-var u = prompt("Your username?");
-var p = prompt("Your password?");
-
+let u = prompt("Your username?");
+let p = prompt("Your password?");
 validateUser(u,p);
 }
-login();
+
+
+  login();
+
+
 function validateUser(username, password) {
-    var boolToCheck;
+    let boolToCheck=true;
     // Check if username and password are not empty
-    if (username.trim() === "" || password.trim() === "") {
+    if (username.trim() == "" || password.trim() == "") {
       boolToCheck = false;
     }
   
@@ -46,21 +50,28 @@ function validateUser(username, password) {
     }
   
     // If all checks passed, return true
-    boolToCheck = true;
+   
     
+
+
     logPassed(boolToCheck);
 }
 
 
 
   function logPassed(xech){
-
-    if(xech==true){
-      alert("Login Successful");
-    }
-    else{
-      alert("Login Failed");
+let timesTried=0;
+ if(xech==true){
+       alert("Login Successful");
+     }
+     else{
+     alert("Login Failed");
       login();
+    
     }
+
+     
+
+  
   }
   
