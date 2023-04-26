@@ -45,7 +45,7 @@ function validateUser(username, password) {
   
     // Check if username and password match some predefined values
     // For example, check against a list of valid users and passwords
-    if (username !== "Eiren" || password !== "1234") {
+    if (username !== "Eiren" || password !== "admin") {
         boolToCheck = false;
     }
   
@@ -60,7 +60,7 @@ function validateUser(username, password) {
 
 
   function logPassed(xech){
-let timesTried=0;
+
  if(xech==true){
        alert("Login Successful");
      }
