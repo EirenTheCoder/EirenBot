@@ -7,19 +7,19 @@
 
 body{
 
-    background-image: url('https://noobzoflegends.fr/wp-content/uploads/2022/10/jinx-lol-min.png');
+    background-image: url('https://cdn.openart.ai/stable_diffusion/e7c2d52b2a1e32fb2c70c02dcb9df5e95d0f97a8_2000x2000.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
 }
     
     main{
 
     background-color: rgba(255, 255, 255, .5);
-    border:solid 3px red;
+    border: dotted 3px rgba(255, 255, 0, .5);
     width: 100%;
 
     }
@@ -28,4 +28,37 @@ body{
         text-align: center;
         font-size: 90px;
     }
-    
+    #container{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width : 100%; 
+        height: 200px;   
+    }
+    #mini-container{
+
+        width:100%;
+        height: 70%;
+        margin:7px;
+
+    }
+   #botoncito{
+
+    text-align: center;
+    margin:auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+font-stretch: semi-expanded;
+    border-radius: 17%;
+
+}
+   .btnJob{
+
+font-size: big;
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   }
