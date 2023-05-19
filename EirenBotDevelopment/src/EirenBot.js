@@ -7,17 +7,6 @@ class  PERSONA{
     }
 }
 
-// function usersListed(){
-//     var usersListed = PERSONA[2];
-//     usersListed[0].name = "Eiren";
-//     usersListed[0].password = "1234";
-//     usersListed[1].name = "Guest";
-//     usersListed[1].password = "0000";
-//     usersListed[2].name = "Admin";
-//     usersListed[2].password = "admin";
-    
-// }
-// usersListed();
 
 function login(){
 
@@ -27,18 +16,26 @@ validateUser(u,p);
 }
 
 
-//  login();
+  login();
 
 
 
 function validateUser(username, password) {
-    let boolToCheck=true;
+ let listOfUsers = [
+    new PERSONA("Eiren", "1234"),
+    new PERSONA("admin", "admin"),
+    new PERSONA("eiren", "admin"),
+    new PERSONA("test", "0000")
+ ]
+ 
+  let boolToCheck=true;
+  if(username == null || password == null){boolToCheck = false; login();} 
     // Check if username and password are not empty
     if (username.trim() == "" || password.trim() == "") {
       boolToCheck = false;
       login();
     }
-    if(username == null || password == null){boolToCheck = false; login();} 
+   
 
 
   
@@ -51,10 +48,11 @@ function validateUser(username, password) {
   
     // Check if username and password match some predefined values
     // For example, check against a list of valid users and passwords
-    if (username !== "Eiren" || password !== "admin") {
-        boolToCheck = false;
-        login();
-    }
+   
+     if (username !== "Eiren" || password !== "admin") {
+         boolToCheck = false;
+         login();
+     }
   
     // If all checks passed, return true
    

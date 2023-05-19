@@ -10,6 +10,7 @@ body{
     background-image: url('https://cdn.openart.ai/stable_diffusion/e7c2d52b2a1e32fb2c70c02dcb9df5e95d0f97a8_2000x2000.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -21,44 +22,62 @@ body{
     background-color: rgba(255, 255, 255, .5);
     border: dotted 3px rgba(255, 255, 0, .5);
     width: 100%;
+    height: 80%;
+    display: block;
+
 
     }
     p{
     
         text-align: center;
-        font-size: 90px;
+        font-size: 80px;
     }
     #container{
 
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
+        position: inherit;
         justify-content: center;
         align-items: center;
         width : 100%; 
-        height: 200px;   
+        height: 100%;   
+    
     }
     #mini-container{
 
         width:100%;
         height: 70%;
-        margin:7px;
+      
 
     }
-   #botoncito{
 
-    text-align: center;
-    margin:auto;
-    display: block;
-    width: 100%;
-    height: 100%;
-font-stretch: semi-expanded;
-    border-radius: 17%;
+    #botoncito{
 
+        text-align: center;
+        margin:auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+    font-stretch: ultra-condensed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+    
+    }
+@media only screen and (max-width: 600px) {
+    
+    .btnJob{
+
+        font-size: 90vw;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-color: aqua;
+           }
+  
 }
-   .btnJob{
 
-font-size: big;
-font-style: italic;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   #second-container{
 
+
+    height: 80%;
+    width: 100%;
+    border: 8px solid rgb(119, 0, 255);
    }
